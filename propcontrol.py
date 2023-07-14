@@ -14,7 +14,8 @@ class Solution:
             min = res[1]
             middle = (max + min)/2
             ans = middle - center 
-            roundedAns = round(ans,6)
+            #roundedAns = round(ans,6)
+            return ans
             pass
         
         
