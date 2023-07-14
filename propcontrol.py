@@ -6,10 +6,10 @@ class Solution:
             
             #TODO: Write code below to return a float with the solution to the prompt.
             Kp = 4
-            if center is not None: 
-                 angle = Kp*(center[1]-(rc.camera.get_width()/2))
-            else:
-                 angle = 1 
+            # if center is not None: 
+            #      #angle = Kp*(center[1]-(rc.camera.get_width()/2))
+            # else:
+            #      angle = 1 
             max = res[0]
             min = res[1]
             middle = (max + min)/2
