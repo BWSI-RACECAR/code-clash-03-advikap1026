@@ -10,12 +10,20 @@ class Solution:
             #      #angle = Kp*(center[1]-(rc.camera.get_width()/2))
             # else:
             #      angle = 1 
-            max = res[0]
-            min = res[1]
-            middle = (max + min)/2
-            ans = abs(middle - center/2) 
-            #roundedAns = round(ans,6)
-            return ans
+            # max = res[0]
+            # min = res[1]
+            # middle = (max + min)/2
+            # ans = abs(middle - center/2) 
+            # #roundedAns = round(ans,6)
+            # return ans
+            oldMax = res[0]
+            oldMin = 0
+            oldSpan = oldMax-oldMin
+
+            newMax = 1
+            newMin = -2
+            newSpan = newMax - newMin
+            return(newMin + newSpan * (float(center-oldMin)/float(oldSpan)))
             pass
         
         
