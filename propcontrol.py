@@ -21,7 +21,7 @@ class Solution:
             oldSpan = oldMax-oldMin
 
             newMax = 1
-            newMin = -2
+            newMin = -1
             newSpan = newMax - newMin
             return(newMin + newSpan * (float(center-oldMin)/float(oldSpan)))
             pass
