@@ -13,7 +13,7 @@ class Solution:
             max = res[0]
             min = res[1]
             middle = (max + min)/2
-            ans = middle - center 
+            ans = abs(middle - center/2) 
             #roundedAns = round(ans,6)
             return ans
             pass
